@@ -3,7 +3,6 @@ import { Inter as FontSans } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
-import { Navbar } from '@/components/ui/navbar'
 import { fontSans } from './font'
 
 export const metadata: Metadata = {
@@ -24,7 +23,6 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Navbar />
         {children}
       </body>
     </html>

@@ -6,9 +6,8 @@ import { usePathname } from 'next/navigation'
 
 const navigation = [
   { name: 'Resume Upload', href: '/', current: true },
-  { name: 'Take Test', href: '#', current: false },
-  { name: 'Course Suggestions', href: '/courses', current: false },
-  { name: 'Calendar', href: '#', current: false }
+  { name: 'Take Test', href: '/tests', current: false },
+  { name: 'Course Suggestions', href: '/courses', current: false }
 ]
 
 function classNames(...classes: any) {
