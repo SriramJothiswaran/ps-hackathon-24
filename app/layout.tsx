@@ -4,11 +4,7 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Navbar } from '@/components/ui/navbar'
-
-export const fontSans = FontSans({
-  subsets: ['latin'],
-  variable: '--font-sans'
-})
+import { fontSans } from './font'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -22,7 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn('min-h-screen bg-background font-sans antialiased')}>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable
+        )}
+      >
         <Navbar />
         {children}
       </body>
