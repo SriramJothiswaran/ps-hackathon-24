@@ -142,9 +142,6 @@ export default function Home() {
               <h2 className='text-lg font-medium'>
                 Here are the list of skillset based on your resume
               </h2>{' '}
-              <span className='bg-slate-900 mr-auto text-white font-semibold uppercase text-xs px-2 py-1'>
-                Marcel Gigs
-              </span>
               <div className='flex gap-4 mt-2 flex-wrap	'>
                 {skills.map((skill) => (
                   <span
