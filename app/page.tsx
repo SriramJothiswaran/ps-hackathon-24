@@ -44,7 +44,7 @@ export default function Home() {
     // 'Trello',
     // 'Slack'
   ])
-  const [additionalSkills, setAdditionalSkills] = useState<string[]>([])
+  const [additionalSkills, setAdditionalSkills] = useState('')
   const [steps, setSteps] = useState([
     {
       id: '01',
@@ -344,9 +344,10 @@ export default function Home() {
                             src='/ps-logo.svg'
                             className='h-24 w-24 mx-auto'
                           />
-                          <CardTitle>{team.name}</CardTitle>
+                          <CardTitle className='pb-4'>{team.name}</CardTitle>
+                          <Button variant='outline'>Join Team</Button>
                         </CardHeader>
-                        <CardContent></CardContent>
+
                         <CardFooter>
                           <div>
                             <p className='text-gray-500 text-sm'>
