@@ -64,7 +64,7 @@ const Page = () => {
   return (
     <div className='bg-gray-100'>
       <form
-        onSubmit={(e) => {
+        onSubmit={(e: any) => {
           e.preventDefault()
           e.target.reset()
           setCurrentQuestion(currentQuestion + 1)
