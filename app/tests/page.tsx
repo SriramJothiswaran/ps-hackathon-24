@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Link from 'next/link'
 import { Navbar } from '@/components/ui/navbar'
@@ -48,12 +50,7 @@ const Tests = () => {
               <div className='col-span-1' key={course.id}>
                 <Link href={`/tests/${course.title.toLowerCase()}`}>
                   <div className='rounded-xl border bg-card text-card-foreground shadow'>
-                    <img
-                      src={course.photo}
-                      className='rounded-t-xl'
-                      alt=''
-                      srcset=''
-                    />
+                    <img src={course.photo} className='rounded-t-xl' />
                     <h3 className='text-lg font-semibold p-6'>
                       {course.title}
                     </h3>

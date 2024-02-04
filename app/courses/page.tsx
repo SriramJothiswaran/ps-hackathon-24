@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Navbar } from '@/components/ui/navbar'
 
@@ -32,12 +34,7 @@ export default function Courses() {
               <div className='col-span-1' key={course.id}>
                 <a href={course.link} target='_blank'>
                   <div className='rounded-xl border bg-card text-card-foreground shadow'>
-                    <img
-                      src={course.photo}
-                      className='rounded-t-xl'
-                      alt=''
-                      srcset=''
-                    />
+                    <img src={course.photo} className='rounded-t-xl' />
                     <h3 className='text-lg font-semibold p-6'>
                       {course.title}
                     </h3>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
@@ -82,11 +83,11 @@ const Page = () => {
           <ul className='flex flex-col gap-6 '>
             {questions[currentQuestion].options.map((o, i) => (
               <li
-                key={i}
+                key={`${i}`}
                 className='flex items-center gap-2 text-lg cursor-pointer'
               >
-                <input type='checkbox' id={i} />
-                <label htmlFor={i} className='cursor-pointer'>
+                <input type='checkbox' id={`${i}`} />
+                <label htmlFor={`${i}`} className='cursor-pointer'>
                   {o}
                 </label>
               </li>
