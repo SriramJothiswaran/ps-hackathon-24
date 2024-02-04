@@ -54,7 +54,7 @@ const Test = () => {
         </div>
       </div>
       <div className='text-center'>
-        <Button className='mx-auto mt-10' asChild>
+        <Button className='mx-auto mt-10' size='xl' asChild>
           <Link href='/tests/typescript/start'>Start the Test</Link>
         </Button>
       </div>

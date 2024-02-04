@@ -70,7 +70,7 @@ const Page = () => {
         <p className='grow overflow-scroll bg-white p-6 text-lg'>
           {questions[currentQuestion].question.map((q, i) =>
             q.element === 'p' ? (
-              <p key={i} className='pb-4 leading-8'>
+              <p key={`${currentQuestion}-${i}`} className='pb-4 leading-8'>
                 {q.text}
               </p>
             ) : q.element === 'img' ? (
@@ -86,8 +86,15 @@ const Page = () => {
                 key={`${i}`}
                 className='flex items-center gap-2 text-lg cursor-pointer'
               >
-                <input type='checkbox' id={`${i}`} />
-                <label htmlFor={`${i}`} className='cursor-pointer'>
+                <input
+                  type='checkbox'
+                  id={`${currentQuestion}-${i}`}
+                  name={`${currentQuestion}-${i}`}
+                />
+                <label
+                  htmlFor={`${currentQuestion}-${i}`}
+                  className='cursor-pointer'
+                >
                   {o}
                 </label>
               </li>

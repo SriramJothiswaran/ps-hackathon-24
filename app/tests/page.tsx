@@ -9,27 +9,27 @@ const Tests = () => {
     {
       id: 1,
       title: 'Typescript',
-      photo: 'https://img-b.udemycdn.com/course/480x270/947098_02ec_2.jpg'
+      photo: '/typescript.png'
     },
     {
       id: 2,
       title: 'ReactJS',
-      photo: 'https://img-c.udemycdn.com/course/480x270/3780436_e8b4_6.jpg'
+      photo: '/react.png'
     },
     {
       id: 3,
       title: 'ExpressJS',
-      photo: 'https://img-c.udemycdn.com/course/480x270/3780436_e8b4_6.jpg'
+      photo: '/express.png'
     },
     {
       id: 4,
       title: 'MongoDB',
-      photo: 'https://img-c.udemycdn.com/course/480x270/3780436_e8b4_6.jpg'
+      photo: '/mongo.png'
     },
     {
       id: 5,
       title: 'MySQL',
-      photo: 'https://img-c.udemycdn.com/course/480x270/3780436_e8b4_6.jpg'
+      photo: '/mysql.png'
     }
   ]
 
@@ -51,7 +51,7 @@ const Tests = () => {
                 <Link href={`/tests/${course.title.toLowerCase()}`}>
                   <div className='rounded-xl border bg-card text-card-foreground shadow'>
                     <img src={course.photo} className='rounded-t-xl' />
-                    <h3 className='text-lg font-semibold p-6'>
+                    <h3 className='text-lg font-semibold p-6 text-center'>
                       {course.title}
                     </h3>
                   </div>
