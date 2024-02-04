@@ -13,9 +13,9 @@ const Result = () => {
     },
     {
       id: 2,
-      title: 'React Testing Library',
-      photo: 'https://img-c.udemycdn.com/course/480x270/3780436_e8b4_6.jpg',
-      link: 'https://www.udemy.com/course/react-testing-library/'
+      title: 'Advanced Typescript: Generics, Patterns',
+      photo: 'https://img-c.udemycdn.com/course/240x135/5625278_acdb_4.jpg',
+      link: 'https://www.udemy.com/course/advanced-typescript/'
     }
   ]
   return (

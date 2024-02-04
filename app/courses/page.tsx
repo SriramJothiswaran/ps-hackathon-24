@@ -13,6 +13,12 @@ export default function Courses() {
     },
     {
       id: 2,
+      title: 'Advanced Typescript: Generics, Patterns',
+      photo: 'https://img-c.udemycdn.com/course/480x270/5625278_acdb_4.jpg',
+      link: 'https://www.udemy.com/course/advanced-typescript/'
+    },
+    {
+      id: 3,
       title: 'React Testing Library',
       photo: 'https://img-c.udemycdn.com/course/480x270/3780436_e8b4_6.jpg',
       link: 'https://www.udemy.com/course/react-testing-library/'
@@ -31,9 +37,12 @@ export default function Courses() {
         <section>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10'>
             {courseList.map((course) => (
-              <div className='col-span-1' key={course.id}>
+              <div
+                className='col-span-1 rounded-xl border bg-card text-card-foreground shadow'
+                key={course.id}
+              >
                 <a href={course.link} target='_blank'>
-                  <div className='rounded-xl border bg-card text-card-foreground shadow'>
+                  <div className=' text-card-foreground '>
                     <img src={course.photo} className='rounded-t-xl' />
                     <h3 className='text-lg font-semibold p-6'>
                       {course.title}

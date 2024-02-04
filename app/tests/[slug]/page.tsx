@@ -18,7 +18,7 @@ const Test = () => {
             <span>Duration</span>
           </div>
           <p>
-            40 minutes (You can pause the test to take a break after each
+            15 minutes (You can pause the test to take a break after each
             question)
           </p>
         </div>

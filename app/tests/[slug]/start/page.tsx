@@ -2,6 +2,7 @@
 'use client'
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
+import { CountdownTimer } from '@/components/ui/countdown'
 import Link from 'next/link'
 
 const Page = () => {
@@ -109,7 +110,9 @@ const Page = () => {
             </ul>
           </p>
           <div className='ml-auto flex gap-4 items-center'>
-            <p className='text-lg text-gray-700'>Remaining Time: 40 min</p>
+            <p className='text-lg text-gray-700'>
+              <CountdownTimer minutes={15} />
+            </p>
             {currentQuestion === questions.length - 1 ? (
               <Button size='xl' asChild>
                 <Link href='/tests/typescript/result'>Submit</Link>

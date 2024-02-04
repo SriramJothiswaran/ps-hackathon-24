@@ -30,6 +30,7 @@ const FileUpload = () => {
                 name='file-upload'
                 type='file'
                 className='sr-only'
+                accept='application/pdf'
               />
             </label>
             <p className='pl-1'>or drag and drop</p>
