@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { Stepper } from '@/components/ui/steps'
 import { FileUpload } from '@/components/ui/file-upload'
@@ -300,7 +301,9 @@ export default function Home() {
                   your areas for improvement
                 </h6>
                 <div className='text-center mt-4'>
-                  <Button>{`View Assesments ->`}</Button>
+                  <Button asChild>
+                    <Link href='/tests'>{`View Assesments ->`}</Link>
+                  </Button>
                 </div>
                 <div className='mt-12'>
                   <h2 className='text-2xl font-extrabold mb-8'>

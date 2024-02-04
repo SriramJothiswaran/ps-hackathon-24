@@ -30,7 +30,7 @@ const Test = () => {
           </p>
         </div>
         <div className='p-6 flex flex-col gap-4'>
-          <p className='w-48 text-red-700 font-medium'>Don't</p>
+          <p className='w-48 text-red-700 font-medium'>{`Don't`}</p>
           <ul>
             <li>
               You are not permitted to seek or submit solutions from any other
