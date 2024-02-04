@@ -14,7 +14,7 @@ const Result = () => {
     {
       id: 2,
       title: 'Advanced Typescript: Generics, Patterns',
-      photo: 'https://img-c.udemycdn.com/course/240x135/5625278_acdb_4.jpg',
+      photo: 'https://img-c.udemycdn.com/course/480x270/5625278_acdb_4.jpg',
       link: 'https://www.udemy.com/course/advanced-typescript/'
     }
   ]
