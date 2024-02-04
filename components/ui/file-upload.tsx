@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const FileUpload = () => {
+  const [selectedFile, setSelectedFile] = useState('')
+
+  const onFileChange = (e: any) => {
+    setSelectedFile(e.target.files[0].name)
+  }
   return (
     <div className='mt-1 sm:col-span-2 sm:mt-0'>
       <div className='flex max-w-lg justify-center rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-6 min-w-96'>
@@ -31,6 +36,7 @@ const FileUpload = () => {
                 type='file'
                 className='sr-only'
                 accept='application/pdf'
+                onChange={onFileChange}
               />
             </label>
             <p className='pl-1'>or drag and drop</p>
@@ -38,6 +44,11 @@ const FileUpload = () => {
           <p className='text-xs text-gray-500'>PDF up to 10MB</p>
         </div>
       </div>
+      {selectedFile && (
+        <p className='mt-2 text-sm text-center text-indigo-600'>
+          {selectedFile}
+        </p>
+      )}
     </div>
   )
 }
